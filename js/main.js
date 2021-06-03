@@ -1,45 +1,22 @@
 
+const countPlusElement = document.getElementById('id')('.add');
+const countMinusElement = document.getElementById('id')('.substract');
+const countDisplayElement = document.querySelector('.count-display');
+const val = parseInt(document.querySelector('input.valueInputField').value, 10);
 
+let input = Num;
+let value = 0;
 
-const calculator = document.querySelector('.calculator');
-const countButtons= document.querySelector('.operator');
-const operator = e.target
-const action = operator.dataset.action
-
-if (!action){
-  console.log('number')
+function(makeACount){
+  count++;
 }
+// event listeners
+countPlusElement.addEventListener('click', () => {
+count++;
+makeACount();
+});
 
-if (
-  action === "add" ||
-  action === "substract"
-){
-  console.log('operator')
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-countButtons.addEventListener('click', e=>{
-  if (e.target.matches('button')){
-    //count
-  }
-})
+countMinusElement.addEventListener('click', () =>{
+count--;
+makeACount();
+});
